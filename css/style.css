@@ -3,6 +3,14 @@ body {
   background: #1c1a19;
 }
 
+.img {
+  position: absolute;
+  width: 406.89px;
+  height: 312.03px;
+  left: 620.1px;
+  top: 317px;
+}
+
 a {
   text-decoration: none;
 }
@@ -11,7 +19,7 @@ a {
   display: flex;
   justify-content: space-between;
   font-family: 'Roboto';
-  margin: 5px;
+  padding: 0;
   width: 100%;
   position: fixed;
   background: #3c3a39;
@@ -24,24 +32,30 @@ a {
   font-size: 17px;
 }
 
-a.icon {
-  align-self: flex-end;
-  padding-left: 55px;
-}
+.topnav a.menu {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+  gap: 4px;
+  background-image: url("./assets");
 }
 
 .headline {
   font-style: normal;
-  font-style: 'Crete Round';
+  font-family: 'Crete Round';
   font-weight: 400;
   font-size: 56px;
+  margin-top: 50px;
+  margin-bottom: 1px;
   line-height: 64px;
   letter-spacing: 0.37px;
   color: #ff6b00;
@@ -52,8 +66,8 @@ a.icon {
   font-family: 'Roboto', 'San serif';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 20px;
+  margin: 1px;
   color: #fff5e1;
 }
 
@@ -61,11 +75,14 @@ a.icon {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
   color: white;
 }
 
-.links * {
-  padding: 5px;
+.links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
