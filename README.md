@@ -26,9 +26,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/peterdtitan)
-- Twitter: [@twitterhandle](https://twitter.com/PeterDeTitan)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/peterokorafor)
+- GitHub: [@peterdtitan](https://github.com/peterdtitan)
+- Twitter: [@PeterDeTitan](https://twitter.com/PeterDeTitan)
+- LinkedIn: [Peter Okorafor](https://linkedin.com/in/peterokorafor)
 
 ## 🤝 Contributing
 
