@@ -1,0 +1,14 @@
+.topnav {
+  display: flex;
+  padding: 10px;
+  background: #3c3a39;
+}
+
+.topnav a {
+  color: white;
+}
+
+.topnav.icon {
+  display: flex;
+  justify-content: flex-end;
+}
