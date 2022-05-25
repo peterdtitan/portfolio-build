@@ -1,4 +1,3 @@
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
 body {
   background: #1c1a19;
 }
@@ -18,7 +17,7 @@ a {
 .topnav {
   display: flex;
   justify-content: space-between;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   padding: 0;
   width: 100%;
   position: fixed;
@@ -32,26 +31,17 @@ a {
   font-size: 17px;
 }
 
-.topnav a.menu {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 4px;
-  background-image: url("./assets");
 }
 
 .headline {
   font-style: normal;
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 56px;
   margin-top: 50px;
@@ -63,7 +53,7 @@ a {
 }
 
 .job-title {
-  font-family: 'Roboto', 'San serif';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -72,7 +62,7 @@ a {
 }
 
 .job-description {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
