@@ -2,7 +2,9 @@
 
 # Personal Portfolio Page
 
-> This is a personal portfolio page that shows off my accomplishments as a software developer.
+> This is the mobile version of a personal portfolio page that shows off my accomplishments as a software developer.
+
+![screenshot](./assets/screenshot.png)
 
 
 ## Built With
