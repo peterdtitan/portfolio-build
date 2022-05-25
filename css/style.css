@@ -1,14 +1,71 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+body {
+  background: #1c1a19;
+}
+
+a {
+  text-decoration: none;
+}
+
 .topnav {
   display: flex;
-  padding: 10px;
+  justify-content: space-between;
+  font-family: 'Roboto';
+  margin: 5px;
+  width: 100%;
+  position: fixed;
   background: #3c3a39;
 }
 
 .topnav a {
   color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.topnav.icon {
+a.icon {
+  align-self: flex-end;
+  padding-left: 55px;
+}
+
+.container {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.headline {
+  font-style: normal;
+  font-style: 'Crete Round';
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  text-decoration: none;
+}
+
+.job-title {
+  font-family: 'Roboto', 'San serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+.job-description {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+.links * {
+  padding: 5px;
 }
