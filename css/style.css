@@ -2,29 +2,38 @@ body {
   background: #1c1a19;
 }
 
-.img {
-  position: absolute;
-  width: 406.89px;
-  height: 312.03px;
-  left: 620.1px;
-  top: 317px;
-}
-
 a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
+.hamburger {
+  padding-right: 30px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+}
+
 .topnav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   font-family: 'Roboto', sans-serif;
-  padding: 0;
   width: 100%;
   position: fixed;
   background: #3c3a39;
 }
 
-.topnav a {
+header a {
   color: white;
   padding: 10px;
   text-decoration: none;
@@ -70,7 +79,7 @@ a {
   color: white;
 }
 
-.links {
+.links * {
   display: flex;
   gap: 20px;
   align-items: center;
