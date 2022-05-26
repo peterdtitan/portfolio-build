@@ -6,12 +6,10 @@
 
 ![screenshot](./assets/screenshot.png)
 
-
 ## Built With
 
 - HTML and CSS
 - Bootstrap
-
 
 ## Getting Started
 

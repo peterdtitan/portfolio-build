@@ -26,7 +26,6 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   font-family: 'Roboto', sans-serif;
   width: 100%;
   position: fixed;
@@ -43,9 +42,12 @@ header a {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 4px;
+}
+
+.main-content {
+  padding: 50px 20px 1px 15px;
 }
 
 .headline {
@@ -82,6 +84,4 @@ header a {
 .links * {
   display: flex;
   gap: 20px;
-  align-items: center;
-  justify-content: center;
 }
