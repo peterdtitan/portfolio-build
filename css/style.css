@@ -1,4 +1,12 @@
+html,
 body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.landing {
+  padding: 50px 20px 1px 15px;
   background: #1c1a19;
 }
 
@@ -28,7 +36,7 @@ li {
   justify-content: space-between;
   font-family: 'Roboto', sans-serif;
   width: 100%;
-  position: fixed;
+  position: absolute;
   background: #3c3a39;
 }
 
@@ -44,10 +52,6 @@ header a {
   flex-direction: column;
   justify-content: center;
   gap: 4px;
-}
-
-.main-content {
-  padding: 50px 20px 1px 15px;
 }
 
 .headline {
@@ -85,3 +89,4 @@ header a {
   display: flex;
   gap: 20px;
 }
+
