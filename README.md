@@ -6,6 +6,8 @@
 
 ![screenshot](./assets/screenshot.png)
 
+![screenshot](./assets/screenshot2.png)
+
 ## Built With
 
 - HTML and CSS
