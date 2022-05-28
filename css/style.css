@@ -171,7 +171,8 @@ header a {
 }
 
 .multi {
-  padding-left: 0;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .cards {
