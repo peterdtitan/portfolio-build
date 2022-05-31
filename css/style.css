@@ -3,10 +3,13 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 section {
+  margin: 0;
   padding-left: 5px;
+  padding-right: 0;
 }
 
 .landing {
