@@ -3,10 +3,13 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 section {
+  margin: 0;
   padding-left: 5px;
+  padding-right: 0;
 }
 
 .landing {
@@ -236,4 +239,54 @@ header a {
   gap: 20px;
   align-items: center;
   justify-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 20px;
+  justify-items: center;
+}
+
+.form h2 {
+  justify-self: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #172b4d;
+}
+
+.form input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: 1px solid grey;
+}
+
+.form button {
+  align-self: center;
+  background-color: #ff6b00;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.contact-me a {
+  align-self: center;
+}
+
+textarea {
+  border: none;
+  background-color: #fbf8f7;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer {
+  display: flex;
+  border-top: 1px solid rgba(185, 185, 185, 0.776);
+  justify-content: center;
+  padding-top: 15px;
 }
