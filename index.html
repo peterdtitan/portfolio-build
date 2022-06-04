@@ -18,19 +18,21 @@
             <nav class="topnav">
                 <a href="#home" class="logo">Peter Okorafor</a>
 
-                <!-- Menu to be implemented in next steps of Microverse projects.
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#" class="logo">About</a>
+                        <a href="#">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="logo">Works</a>
+                        <a href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="logo">Contact</a>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"><img src="./assets/Disabled.png" alt="mail"></a>
                     </li>
                 </ul>
-                -->
+
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -42,9 +44,9 @@
 
     <section class="landing">
         <div class="container">
-            <h1 class="container headline">Hey There.<br>I'm Peter</h1>
-            <h2 class="container job-title">I am a Software Developer</h2>
-            <p class="container job-description">I can help you build a product, feature or website.Look through some of my work and experience! If you like what you see and have a project you need coded, do not hestiate to contact me.</p>
+            <h1 class="headline">Hey There.<br>I'm Peter</h1>
+            <h2 class="job-title">I am a Software Developer</h2>
+            <p class="job-description">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, do not hestiate to contact me.</p>
         </div>
     
         <div class="links">
@@ -71,7 +73,11 @@
     <section class="works-header">
         <div class="works-title">
             <h1>My Recent Works</h1>
+            <hr>
         </div>
+
+        <h1 class="desktop-title">My Recent Works</h1>
+        <img src="./assets/Vector.png" alt="vectors" id="hidden-line" />
     </section>
 
     <section class="works-posts">
@@ -80,7 +86,7 @@
                 <img src="./assets/works2.png" alt="React-website" class="work-img">
             </div>
 
-            <div class="item2">
+            <div class="item2 multi">
                 <h2>Multi-Post Stories</h2>
                 <p>A daily selection of privately personalized reads; 
                  no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, 
@@ -92,14 +98,14 @@
                     <li>ruby</li>
                 </ul>
                 <div class="cta multi">
-                    <a href="#" class="projects-cta">See Projects</a>
+                    <a href="https://github.com/peterdtitan/portfolio-build" class="projects-cta" target="blank">See Projects</a>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="posts">
-        <div class="cards">
+        <div class="cards card-hover">
             <h2>Professional Art Printing Data</h2>
             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
             <ul class="languages">
@@ -107,19 +113,7 @@
                 <li>bootstrap</li>
                 <li>ruby</li>
             </ul>
-            <a href="#" class="cards-cta">See Projects</a>
-        </div>
-
-
-        <div class="cards">
-            <h2>Professional Art Printing Data</h2>
-            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-            <ul class="languages">
-                <li>html</li>
-                <li>bootstrap</li>
-                <li>ruby</li>
-            </ul>
-            <a href="#" class="cards-cta">See Projects</a>
+            <a href="https://github.com/peterdtitan/portfolio-build" class="cards-cta desktop" target="blank">See Projects</a>
         </div>
 
         <div class="cards">
@@ -131,35 +125,81 @@
                 <li>ruby</li>
             </ul>
             <a href="#" class="cards-cta">See Projects</a>
+        </div>
+
+        <div class="cards">
+            <h2>Professional Art Printing Data</h2>
+            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+            <ul class="languages">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>ruby</li>
+            </ul>
+            <a href="https://github.com/peterdtitan/portfolio-build" class="cards-cta" target="blank">See Projects</a>
+        </div>
+
+        <div class="cards">
+            <h2>Professional Art Printing Data</h2>
+            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+            <ul class="languages">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>ruby</li>
+            </ul>
+            <a href="https://github.com/peterdtitan/portfolio-build" class="cards-cta" target="blank">See Projects</a>
+        </div>
+
+
+        <div class="cards">
+            <h2>Professional Art Printing Data</h2>
+            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+            <ul class="languages">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>ruby</li>
+            </ul>
+            <a href="https://github.com/peterdtitan/portfolio-build" class="cards-cta" target="blank">See Projects</a>
+        </div>
+
+        <div class="cards">
+            <h2>Professional Art Printing Data</h2>
+            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+            <ul class="languages">
+                <li>html</li>
+                <li>bootstrap</li>
+                <li>ruby</li>
+            </ul>
+            <a href="https://github.com/peterdtitan/portfolio-build" class="cards-cta" target="blank">See Projects</a>
         </div>
     </section>
 
     <section class="about">
-        <div class="container">
-            <h1 class="container headline">About Me</h1>
-            <p class="container job-description">Hello I’m a software developer! I can help you build a product , 
+        <div>
+            <h1 class="headline">About Me</h1>
+            <p class="job-description">Hello I’m a software developer! I can help you build a product, 
                 feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                 don’t hestiate to contact me.
             </p>
         </div>
-        <a href="#" class="projects-cta">Get Resume</a>
-        
+        <a href="https://github.com/peterdtitan" class="projects-cta multi" target="blank">Get Resume</a>
+        <hr>
     </section>
+    
 
     <section class="lang-framework">
         <div class="info">
-            <h2>
-                <img src="./assets/rec1.png" alt="React-website" class="work-img">
-                Languages
+            <h2 class="title1">
+                <img src="./assets/rec1.png" alt="React-website" class="work-img"> Languages
             </h2>
             <ul>
                 <li>JavaScript</li>
                 <li>Ruby</li>
                 <li>Html</li>
                 <li>Css</li>
+                <li>PHP</li>
             </ul>
 
-            <h2>
+            <h2 class="title2">
                 <img src="./assets/rec2.png" alt="React-website" class="work-img">
                 Frameworks
             </h2>
@@ -171,7 +211,7 @@
                 <li>Selenium</li>
             </ul>
 
-            <h2>
+            <h2 class="title3">
                 <img src="./assets/rec3.png" alt="React-website" class="work-img">
                 Skills
             </h2>
@@ -186,7 +226,7 @@
     </section>
 
     <section class="contact-me">
-        <div class="form">
+        <div class="form-box">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             <form action="https://formspree.io/f/mlezzzeo" method="post" class="form">
                 <input id="name" name="name" type="text" placeholder="Full Name" required="required" maxlength="30">
@@ -200,19 +240,19 @@
         <div class="links">
             <ul>
                 <li>
-                    <a href="http://github.com/peterdtitan" target="blank"><img src="assets/github.svg" alt="github"></a>
+                    <a href="http://github.com/peterdtitan" target="blank"><img src="assets/github.svg" alt="github" class="ft-links"></a>
                 </li>
                 <li>
-                    <a href="http://linkedin.com/in/peterokorafor" target="blank"><img src="assets/linkedin.svg" alt="linkedin"></a>
+                    <a href="http://linkedin.com/in/peterokorafor" target="blank"><img src="assets/linkedin.svg" alt="linkedin" class="ft-links"></a>
                 </li>
                 <li>
-                    <a href="http://angellist.com" target="blank"><img src="assets/angellist.svg" alt="angel-list"></a>
+                    <a href="http://angellist.com" target="blank"><img src="assets/angellist.svg" alt="angel-list" class="ft-links"></a>
                 </li>
                 <li>
-                    <a href="http://twitter.com/PeterDeTitan" target="blank"><img src="assets/twitter.svg" alt="twitter"></a>
+                    <a href="http://twitter.com/PeterDeTitan" target="blank"><img src="assets/twitter.svg" alt="twitter" ></a>
                 </li>
                 <li>
-                    <a href="http://medium.com" target="blank"><img src="assets/medium.svg" alt="linkedin"></a>
+                    <a href="http://medium.com" target="blank"><img src="assets/medium.svg" alt="linkedin" class="ft-links"></a>
                 </li>
             </ul>
         </div>    
