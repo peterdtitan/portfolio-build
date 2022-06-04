@@ -112,6 +112,10 @@ header a {
   justify-content: center;
 }
 
+.desktop-title {
+  display: none;
+}
+
 .works-title {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
@@ -151,6 +155,10 @@ header a {
 .item2 p {
   padding-bottom: none;
   margin: none;
+}
+
+#hidden-line {
+  display: none;
 }
 
 .languages {
@@ -349,6 +357,27 @@ footer {
     padding: 0;
   }
 
+  .item2 {
+    padding-top: 50px;
+    width: 400px;
+    font-size: 14px;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+
+  .works-title {
+    display: none;
+  }
+
+  .desktop-title {
+    display: flex;
+    font-family: 'Crete Round', sans-serif;
+  }
+
+  .cards ul {
+    display: grid;
+  }
+
   .info ul {
     display: flex;
     align-items: flex-start;
@@ -361,6 +390,10 @@ footer {
     padding-bottom: 16px;
   }
 
+  footer img {
+    filter: grayscale(100%);
+  }
+
   .landing > .links ul {
     flex-direction: column;
     align-self: center;
@@ -371,23 +404,68 @@ footer {
 
   .works-header {
     display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .works-header h1 {
+    justify-self: center;
+    align-self: center;
+    font-size: 30px;
   }
 
   .posts {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: start;
     padding-left: 80px;
     padding-right: 80px;
+    gap: 10px;
+  }
+
+  .cards {
+    display: grid;
+    align-content: end;
     gap: 20px;
+    height: 300px;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.222) 0%, rgb(0, 0, 0) 100%), url('../assets/hiddencard.png');
   }
 
-  .item1 img {
-    width: auto;
+  .cards:hover {
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url('../assets/hiddencard.png');
+    color: rgb(0, 0, 0);
   }
 
-  .item2 {
-    gap: 15px;
-    width: 600px;
-    align-self: center;
+  .cards a {
+    display: none;
+  }
+
+  .cards .languages {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-bottom: 10px;
+  }
+
+  .card h2 {
+    align-self: start;
+  }
+
+  .cards p {
+    align-self: end;
+  }
+
+  .cards .languages li {
+    background-color: rgba(79, 79, 79, 0.666);
+    align-self: end;
+  }
+
+  .item1 > img {
+    float: left;
+    width: 100%;
   }
 
   .projects-cta {
@@ -407,10 +485,6 @@ footer {
     background-position: 100% 60%;
   }
 
-  .about p {
-    width: 50%;
-  }
-
   .about hr {
     width: 100%;
     gap: 60px;
@@ -418,9 +492,13 @@ footer {
     align-self: flex-start;
   }
 
+  .about p {
+    width: 430px;
+  }
+
   .lang-framework {
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 5px;
   }
 
   .info h2 {
@@ -469,10 +547,29 @@ footer {
   .form {
     align-self: center;
     justify-self: center;
-    width: 100%;
+    width: 50%;
+  }
+
+  #hidden-line {
+    display: block;
+    align-self: center;
+    height: 1px;
+    width: 70%;
+    gap: 10px;
   }
 
   .form button {
     align-self: flex-start;
+  }
+
+  .cards:hover h2,
+  .cards:hover p,
+  .cards:hover ul {
+    display: none;
+  }
+
+  .cards:hover a {
+    display: flex;
+    padding-left: 5px;
   }
 }
