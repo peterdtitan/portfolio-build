@@ -12,6 +12,10 @@ section {
   padding-right: 0;
 }
 
+.nav-menu {
+  display: none;
+}
+
 .landing {
   padding: 50px 20px 100px 15px;
   background: #1c1a19;
@@ -53,6 +57,7 @@ li {
 
 header a {
   color: white;
+  display: absolute;
   padding: 10px;
   text-decoration: none;
   font-size: 17px;
@@ -96,7 +101,7 @@ header a {
   color: white;
 }
 
-.links * {
+.links ul {
   display: flex;
   gap: 20px;
 }
@@ -111,7 +116,6 @@ header a {
   font-family: 'Crete Round', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .posts {
@@ -174,6 +178,7 @@ header a {
 }
 
 .multi {
+  gap: 20px;
   padding-top: 10px;
   padding-left: 10px;
 }
@@ -207,21 +212,25 @@ header a {
 }
 
 .about {
-  padding: 50px 15px 100px 15px;
+  padding: 25px 15px 40px 15px;
   background: #1c1a19;
   background-image: url("../assets/Frame.png");
-  background-size: 100px 150px;
+  background-size: 120px 170px;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: 100% 80%;
+}
+
+.about > hr {
+  margin-top: 120px;
 }
 
 .lang-framework {
-  display: flex;
   background: #1c1a19;
   color: white;
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  padding-bottom: 50px;
 }
 
 .info {
@@ -238,6 +247,7 @@ header a {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  font-size: 11px;
   justify-items: center;
 }
 
@@ -249,7 +259,7 @@ header a {
   justify-items: center;
 }
 
-.form h2 {
+.form-box h2 {
   justify-self: center;
   font-family: 'Poppins', sans-serif;
   text-align: center;
@@ -289,4 +299,180 @@ footer {
   border-top: 1px solid rgba(185, 185, 185, 0.776);
   justify-content: center;
   padding-top: 15px;
+}
+
+@media (min-width: 768px) {
+  body * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    max-width: 100%;
+  }
+
+  .topnav {
+    display: flex;
+    justify-items: flex-end;
+    padding-left: 125px;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-items: flex-end;
+    padding-left: 100px;
+  }
+
+  .bar {
+    display: none;
+  }
+
+  .landing {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    background: #1c1a19;
+    gap: 80px;
+    background-image: url("../assets/art.png");
+    background-size: 350px 450px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .container {
+    justify-self: flex-end;
+    padding: 50px 350px 50px 0;
+    width: 400px;
+  }
+
+  .item2 ul {
+    padding: 0;
+  }
+
+  .info ul {
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+  }
+
+  footer > .links ul {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .landing > .links ul {
+    flex-direction: column;
+    align-self: center;
+    flex-basis: 20px;
+    justify-self: center;
+    padding: 140px 0 0 20px;
+  }
+
+  .works-header {
+    display: flex;
+  }
+
+  .posts {
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 20px;
+  }
+
+  .item1 img {
+    width: auto;
+  }
+
+  .item2 {
+    gap: 15px;
+    width: 600px;
+    align-self: center;
+  }
+
+  .projects-cta {
+    align-self: flex-start;
+    justify-self: center;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 80px 0 80px;
+    gap: 30px;
+    background-image: url("../assets/desktopabout.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 100% 60%;
+  }
+
+  .about p {
+    width: 50%;
+  }
+
+  .about hr {
+    width: 100%;
+    gap: 60px;
+    margin-top: 50px;
+    align-self: flex-start;
+  }
+
+  .lang-framework {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .info h2 {
+    font-size: 20px;
+  }
+
+  .info {
+    display: grid;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    gap: 15px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  .title1 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .title2 {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+
+  .title3 {
+    grid-column: 3 / 4;
+    grid-row: 1;
+  }
+
+  .form-box {
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    padding: 50px 80px 80px 80px;
+    gap: 20px;
+  }
+
+  .form-box h2 {
+    width: 55%;
+    justify-self: center;
+    text-align: left;
+    color: rgb(0, 0, 0);
+  }
+
+  .form {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+  }
+
+  .form button {
+    align-self: flex-start;
+  }
 }
