@@ -81,9 +81,13 @@ header a {
   letter-spacing: 0.37px;
   color: #ff6b00;
   text-decoration: none;
+}
+
+.party-text {
   background-color: #1c1a19;
   animation-name: example;
   animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes example {
