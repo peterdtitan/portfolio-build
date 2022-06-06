@@ -2,7 +2,7 @@
 
 # Personal Portfolio Page
 
-> This is the mobile version of a personal portfolio page that shows off my accomplishments as a software developer.
+> This is a personal portfolio page that shows off my accomplishments as a software developer.
 
 ![screenshot](./assets/screenshot.png)
 ![screenshot](./assets/screenshot2.png)
@@ -11,6 +11,10 @@
 
 - HTML and CSS
 - Bootstrap
+
+## Live Demo (if available)
+
+[Peter Okorafor's Portfolio](https://github.io/portfolio-build/)
 
 ## Getting Started
 
