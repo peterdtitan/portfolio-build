@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Peter Okorafor's Portfolio](https://github.io/portfolio-build/)
+[Peter Okorafor's Portfolio](https://peterdtitan.github.io/portfolio-build/)
 
 ## Getting Started
 
