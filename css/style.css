@@ -55,7 +55,7 @@ li {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .nav-menu {
     position: fixed;
     left: -100%;
