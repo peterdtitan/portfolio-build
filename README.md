@@ -12,7 +12,7 @@
 - HTML and CSS
 - Bootstrap
 
-## Live Demo (if available)
+## Live Demo 
 
 [Peter Okorafor's Portfolio](https://peterdtitan.github.io/portfolio-build/)
 
