@@ -12,6 +12,10 @@ section {
   padding-right: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   padding-left: 0;
 }
@@ -31,10 +35,6 @@ header a {
   background-size: 150px 200px;
   background-repeat: no-repeat;
   background-position: bottom right;
-}
-
-a {
-  text-decoration: none;
 }
 
 li {
