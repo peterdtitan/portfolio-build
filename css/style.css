@@ -12,8 +12,21 @@ section {
   padding-right: 0;
 }
 
-.nav-menu {
-  display: none;
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding-left: 0;
+}
+
+header a {
+  color: #fff5e1;
+  display: absolute;
+  padding: 10px;
+  align-self: center;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .landing {
@@ -25,16 +38,8 @@ section {
   background-position: bottom right;
 }
 
-a {
-  text-decoration: none;
-}
-
 li {
   list-style: none;
-}
-
-.hamburger {
-  padding-right: 30px;
 }
 
 .bar {
@@ -45,22 +50,88 @@ li {
   background-color: white;
 }
 
+.hamburger {
+  display: block;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.hamburger.active {
+  margin-top: 10px;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #979493;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #979493;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    gap: 0;
+    font-size: 32px;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    transition: 0.3s;
+  }
+
+  .topnav {
+    position: fixed;
+    overflow: hidden;
+    padding-top: 10px;
+  }
+
+  header li a {
+    font-size: 32px;
+    gap: 10px;
+    text-align: left;
+    padding-bottom: 8px;
+  }
+
+  #hidemail {
+    visibility: hidden;
+  }
+
+  .logo.active {
+    visibility: hidden;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    font-size: 32px;
+    font-weight: 700;
+    background: #3c3a39;
+  }
+
+  .nav-menu.active .nav-item {
+    border-bottom: 1px solid #6f6c6b;
+    border-width: 50%;
+    padding: 20px;
+    margin-right: 80px;
+  }
+}
+
 .topnav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow: hidden;
   font-family: 'Roboto', sans-serif;
   width: 100%;
-  position: absolute;
+  position: fixed;
   background: #3c3a39;
-}
-
-header a {
-  color: white;
-  display: absolute;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 17px;
 }
 
 .container {
