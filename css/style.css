@@ -58,7 +58,6 @@ li {
 
 .hamburger.active {
   margin-top: 10px;
-  margin-bottom: 5px;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -72,7 +71,7 @@ li {
 
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-  background-color: #979493
+  background-color: #979493;
 }
 
 @media (max-width: 768px) {
