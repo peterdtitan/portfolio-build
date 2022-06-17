@@ -31,7 +31,12 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: '../assets/card.png'
+    imageURL: '../assets/card.png',
+    privateClasses: {
+      seeProjectBtn: 'see-projec-btn-1',
+      modalContainer: 'modal-container1',
+      modalCloseBtn: 'modal-close-btn1',
+    },
   },
   {
     title: 'Professional Art Printing Data',
@@ -46,7 +51,12 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: '../assets/card.png'
+    imageURL: '../assets/card.png',
+    privateClasses: {
+      seeProjectBtn: 'see-projec-btn-2',
+      modalContainer: 'modal-container2',
+      modalCloseBtn: 'modal-close-btn2',
+    },
   },
   {
     title: 'Professional Art Printing Data',
@@ -61,7 +71,12 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: '../assets/card.png'
+    imageURL: '../assets/card.png',
+    privateClasses: {
+      seeProjectBtn: 'see-projec-btn-3',
+      modalContainer: 'modal-container3',
+      modalCloseBtn: 'modal-close-btn3',
+    },
   },
   {
     title: 'Professional Art Printing Data',
@@ -76,7 +91,12 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: '../assets/card.png'
+    imageURL: '../assets/card.png',
+    privateClasses: {
+      seeProjectBtn: 'see-projec-btn-4',
+      modalContainer: 'modal-container4',
+      modalCloseBtn: 'modal-close-btn4',
+    },
   },
   {
     title: 'Professional Art Printing Data',
@@ -91,7 +111,12 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: '../assets/card.png'
+    imageURL: '../assets/card.png',
+    privateClasses: {
+      seeProjectBtn: 'see-projec-btn-5',
+      modalContainer: 'modal-container5',
+      modalCloseBtn: 'modal-close-btn5',
+    },
   },
   {
     title: 'Professional Art Printing Data',
@@ -106,7 +131,12 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: '../assets/card.png'
+    imageURL: '../assets/card.png',
+    privateClasses: {
+      seeProjectBtn: 'see-projec-btn-6',
+      modalContainer: 'modal-container6',
+      modalCloseBtn: 'modal-close-btn6',
+    },
   },
 ]
 
@@ -126,7 +156,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>${project.description}</p>
                 <ul class="languages">
                 </ul>
-                <a href="https://github.com/peterdtitan/portfolio-build" class="cards-cta desktop" target="blank">See Projects</a>
+                <a 
+                class="cards-cta desktop ${project.privateClasses.seeProjectBtn}" target="blank">See Projects
+                </a>
               `;
     
     projectCardContainer = document.createElement('div');
@@ -137,21 +169,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modalContent = `  
                   <div class="modal-content">
-                    <h2>Multi-Post Stories</h2>
+                    <button class="modal-close-btn ${project.privateClasses.modalCloseBtn}">x<button>
+                    <h2>${project.title}</h2>
                     <ul class="modal-langs">
-                        <li>html</li>
-                        <li>bootstrap</li>
-                        <li>ruby</li>
+                      ${projectLanguages.join('')}
                     </ul>
-                    <img src="./assets/card.png" alt="Porject Image">
-                    <description>Heloo theissskdrjklewndkadnkscn vcsvjjvnscknkdvnk</description>
+                    <img src=${project.imageURL} alt="Porject Image">
+                    <div class="modal-description">${project.description}</div>
                   </div>
                   `;
 
     modalContainer = document.createElement('div');
-    modalContainer.innerHTML = projectContent;
+    modalContainer.innerHTML = modalContent;
     // set element class card
-    projectCardContainer.setAttribute('class', 'modal');
+    modalContainer.setAttribute('class', `modal ${project.privateClasses.modalContainer}`);
+    modalContainer.setAttribute('id', `${project.privateClasses.modalContainer}`);
     projectsContainer.appendChild(modalContainer);
   })
 })
+// show and hide modal
+document.addEventListener('click', (event) => {
+  let modalContainer;
+  projects.forEach((project) => {
+    modalContainer = document.getElementById(project.privateClasses.modalContainer);
+    if (event.target.classList.contains(project.privateClasses.seeProjectBtn)) {
+      modalContainer.style.display = 'block';
+    }
+    if (event.target.classList.contains(project.privateClasses.modalCloseBtn)) {
+      modalContainer.style.display = 'none';
+    }
+  });
+});
