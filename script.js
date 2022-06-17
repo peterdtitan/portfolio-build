@@ -31,7 +31,7 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: '../assets/card.png',
+    imageURL: `'./assets/snapshoot.png'`,
     privateClasses: {
       seeProjectBtn: 'see-projec-btn-1',
       modalContainer: 'modal-container1',
@@ -51,7 +51,7 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: '../assets/card.png',
+    imageURL: `'./assets/snapshoot.png'`,
     privateClasses: {
       seeProjectBtn: 'see-projec-btn-2',
       modalContainer: 'modal-container2',
@@ -71,7 +71,7 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: '../assets/card.png',
+    imageURL: `'./assets/snapshoot.png'`,
     privateClasses: {
       seeProjectBtn: 'see-projec-btn-3',
       modalContainer: 'modal-container3',
@@ -91,7 +91,7 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: '../assets/card.png',
+    imageURL: `'./assets/snapshoot.png'`,
     privateClasses: {
       seeProjectBtn: 'see-projec-btn-4',
       modalContainer: 'modal-container4',
@@ -111,7 +111,7 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: '../assets/card.png',
+    imageURL: `'./assets/snapshoot.png'`,
     privateClasses: {
       seeProjectBtn: 'see-projec-btn-5',
       modalContainer: 'modal-container5',
@@ -131,7 +131,7 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: '../assets/card.png',
+    imageURL: `'./assets/snapshoot.png'`,
     privateClasses: {
       seeProjectBtn: 'see-projec-btn-6',
       modalContainer: 'modal-container6',
@@ -167,15 +167,30 @@ document.addEventListener('DOMContentLoaded', () => {
     projectCardContainer.setAttribute('class', 'cards', 'posts');
     projectsContainer.appendChild(projectCardContainer);
 
-    modalContent = `  
+    modalContent = `
                   <div class="modal-content">
-                    <button class="modal-close-btn ${project.privateClasses.modalCloseBtn}">x<button>
-                    <h2>${project.title}</h2>
+                    <div class="modal-header">
+                      <h2>${project.title}</h2>
+                      <button class="modal-close-btn ${project.privateClasses.modalCloseBtn}">&times;</button>
+                    </div>
                     <ul class="modal-langs">
                       ${projectLanguages.join('')}
                     </ul>
-                    <img src=${project.imageURL} alt="Porject Image">
-                    <div class="modal-description">${project.description}</div>
+                    <div class="modal-details">
+                      <div> 
+                        <img  class="modal-image" src=${project.imageURL} alt="Project Image">
+                      </div>
+                          <div class="modal-description">
+                            <div>${project.details}</div>
+                            <div class="modal-buttons">
+                              <button class="modal-cta">See Live</button>
+                              <button class="modal-cta">See Source</button>
+                            </div>
+                          </div>
+                      </div>
+                      
+                    </div>
+                    
                   </div>
                   `;
 
