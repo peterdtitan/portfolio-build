@@ -393,6 +393,15 @@ li {
   cursor: pointer;
 }
 
+/*
+.error {
+  color: #ff3434;
+  font-size: 11px;
+  margin: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+*/
+
 .contact-me a {
   align-self: center;
 }
