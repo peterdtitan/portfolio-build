@@ -395,7 +395,7 @@ li {
 }
 
 .form button {
-  align-self: center;
+  align-self: left;
   background-color: #ff6b00;
   border: none;
   color: white;
@@ -403,6 +403,20 @@ li {
   font-family: 'Poppins', sans-serif;
   padding: 12px;
   cursor: pointer;
+}
+
+.form-post {
+  display: flex;
+  flex-direction: row;
+}
+
+.error {
+  color: #ff3434;
+  padding: 10px;
+  font-size: 11px;
+  font-weight: 900;
+  margin: 0.5rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-me a {
