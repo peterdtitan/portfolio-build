@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
     projectLanguages = project.languages.map(
       (lang) => `<li>${lang}</li>`,
     );
-    projectContent= `
+    projectContent = `
                 <h2>${project.title}</h2>
                 <p>${project.description}</p>
                 <ul class="languages">
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 class="cards-cta desktop ${project.privateClasses.seeProjectBtn}" target="blank">See Projects
                 </a>
               `;
-    
+
     projectCardContainer = document.createElement('div');
     projectCardContainer.innerHTML = projectContent;
     // set element class card

@@ -458,7 +458,7 @@ footer {
   width: 80%;
 }
 
-.modal-close-btn{
+.modal-close-btn {
   font-size: 25px;
   float: right;
   background-color: transparent;
@@ -489,7 +489,7 @@ footer {
   align-items: center;
 }
 
-.modal-details{
+.modal-details {
   display: flex;
   flex-direction: column;
   grid-gap: 20px;
@@ -777,13 +777,13 @@ footer {
     padding-left: 5px;
   }
 
-  .modal-details{
+  .modal-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   .modal-description {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
