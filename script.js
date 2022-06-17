@@ -25,7 +25,7 @@ document.querySelector('.submit').addEventListener('click', (event) => {
   if (!isLowerCase(email)) {
     event.preventDefault();
     error.innerHTML = 'Error: email should be in lowercase!';
-    // hide error 5 seconds time so it can show up if the there is another error when click again
+    // Hide error after 5 seconds.
     setTimeout(() => {
       error.innerHTML = '';
     }, 5000);
