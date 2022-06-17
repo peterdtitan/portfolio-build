@@ -397,7 +397,7 @@ li {
   display: flex;
   flex-direction: row;
 }
-/*
+
 .error {
   color: #ff3434;
   padding: 10px;
@@ -406,7 +406,7 @@ li {
   margin: 0.5rem;
   font-family: 'Poppins', sans-serif;
 }
-*/
+
 .contact-me a {
   align-self: center;
 }
