@@ -17,7 +17,6 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   logo.classList.remove('active');
 }));
 
-<<<<<<< HEAD
 // Initialize an array to store cards.
 const projects = [
   {
@@ -217,7 +216,7 @@ document.addEventListener('click', (event) => {
     }
   });
 });
-=======
+
 // Email Validation
 document.querySelector('.submit').addEventListener('click', (event) => {
   const email = document.getElementById('email').value;
@@ -232,4 +231,3 @@ document.querySelector('.submit').addEventListener('click', (event) => {
     }, 5000);
   }
 });
->>>>>>> 240f53096f32cc1b4b3bb3b1ff1c56122ec65d78
