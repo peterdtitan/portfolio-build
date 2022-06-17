@@ -23,7 +23,7 @@ const projects = [
     title: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry´s standard',
     languages: ['html', 'css', 'bootstrap'],
-    details: 
+    details:
               `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
               standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s 
               with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
@@ -32,7 +32,7 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: `'./assets/snapshoot.png'`,
+    imageURL: './assets/snapshoot.png',
     privateClasses: {
       seeProjectBtn: 'see-projec-btn-1',
       modalContainer: 'modal-container1',
@@ -43,7 +43,7 @@ const projects = [
     title: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry´s standard',
     languages: ['html', 'css', 'bootstrap'],
-    details: 
+    details:
               `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
               standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s 
               with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
@@ -52,7 +52,7 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: `'./assets/snapshoot.png'`,
+    imageURL: './assets/snapshoot.png',
     privateClasses: {
       seeProjectBtn: 'see-projec-btn-2',
       modalContainer: 'modal-container2',
@@ -63,7 +63,7 @@ const projects = [
     title: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry´s standard',
     languages: ['html', 'css', 'bootstrap'],
-    details: 
+    details:
               `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
               standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s 
               with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
@@ -72,7 +72,7 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: `'./assets/snapshoot.png'`,
+    imageURL: './assets/snapshoot.png',
     privateClasses: {
       seeProjectBtn: 'see-projec-btn-3',
       modalContainer: 'modal-container3',
@@ -83,7 +83,7 @@ const projects = [
     title: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry´s standard',
     languages: ['html', 'css', 'bootstrap'],
-    details: 
+    details:
               `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
               standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s 
               with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
@@ -92,7 +92,7 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: `'./assets/snapshoot.png'`,
+    imageURL: './assets/snapshoot.png',
     privateClasses: {
       seeProjectBtn: 'see-projec-btn-4',
       modalContainer: 'modal-container4',
@@ -103,7 +103,7 @@ const projects = [
     title: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry´s standard',
     languages: ['html', 'css', 'bootstrap'],
-    details: 
+    details:
               `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
               standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s 
               with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
@@ -112,7 +112,7 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: `'./assets/snapshoot.png'`,
+    imageURL: './assets/snapshoot.png',
     privateClasses: {
       seeProjectBtn: 'see-projec-btn-5',
       modalContainer: 'modal-container5',
@@ -123,7 +123,7 @@ const projects = [
     title: 'Professional Art Printing Data',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry´s standard',
     languages: ['html', 'css', 'bootstrap'],
-    details: 
+    details:
               `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
               standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s 
               with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
@@ -132,14 +132,14 @@ const projects = [
               `,
     seeLiveLink: '',
     seeSourceLink: '',
-    imageURL: `'./assets/snapshoot.png'`,
+    imageURL: './assets/snapshoot.png',
     privateClasses: {
       seeProjectBtn: 'see-projec-btn-6',
       modalContainer: 'modal-container6',
       modalCloseBtn: 'modal-close-btn6',
     },
   },
-]
+];
 
 document.addEventListener('DOMContentLoaded', () => {
   const projectsContainer = document.querySelector('.posts');
@@ -147,12 +147,12 @@ document.addEventListener('DOMContentLoaded', () => {
   let projectLanguages;
   let projectCardContainer;
   let modalContent;
+  let modalContainer;
   projects.forEach((project) => {
     projectLanguages = project.languages.map(
       (lang) => `<li>${lang}</li>`,
     );
-    projectContent = 
-    `            
+    projectContent= `
                 <h2>${project.title}</h2>
                 <p>${project.description}</p>
                 <ul class="languages">
@@ -201,8 +201,8 @@ document.addEventListener('DOMContentLoaded', () => {
     modalContainer.setAttribute('class', `modal ${project.privateClasses.modalContainer}`);
     modalContainer.setAttribute('id', `${project.privateClasses.modalContainer}`);
     projectsContainer.appendChild(modalContainer);
-  })
-})
+  });
+});
 // show and hide modal
 document.addEventListener('click', (event) => {
   let modalContainer;
