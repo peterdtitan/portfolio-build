@@ -230,3 +230,36 @@ document.querySelector('.submit').addEventListener('click', (event) => {
     }, 5000);
   }
 });
+
+// Local Storage starts here
+const form = document.getElementById('contact-form');
+const [username, email, message] = form.elements;
+
+if (!localStorage.getItem('form-data')) {
+  const data = { usernameValue: '', emailValue: '', messageValue: '' };
+  localStorage.setItem('form-data', JSON.stringify(data));
+}
+
+const addDataToBrowser = (element, elementValue) => {
+  element.addEventListener('change', () => {
+    const retrivedData = JSON.parse(localStorage.getItem('form-data'));
+    retrivedData[elementValue] = element.value;
+    localStorage.setItem('form-data', JSON.stringify(retrivedData));
+  });
+};
+
+const putDataInFields = (element, elementValue) => {
+  element.value = elementValue;
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+// Set Form fields in Local Storage
+  addDataToBrowser(username, 'usernameValue');
+  addDataToBrowser(email, 'emailValue');
+  addDataToBrowser(message, 'messageValue');
+
+  const data = JSON.parse(localStorage.getItem('form-data'));
+  putDataInFields(username, data.usernameValue);
+  putDataInFields(email, data.emailValue);
+  putDataInFields(message, data.messageValue);
+});
