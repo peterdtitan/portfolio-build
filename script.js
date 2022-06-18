@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <h2>${project.title}</h2>
                 <p>${project.description}</p>
                 <ul class="languages">
+                  ${projectLanguages.join('')}
                 </ul>
                 <a 
                 class="cards-cta desktop ${project.privateClasses.seeProjectBtn}" target="blank">See Projects
@@ -175,6 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       <button class="modal-close-btn ${project.privateClasses.modalCloseBtn}">&times;</button>
                     </div>
                     <ul class="modal-langs">
+                      ${projectLanguages.join('')}
                     </ul>
                     <div class="modal-details">
                       <div> 
