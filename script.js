@@ -253,11 +253,11 @@ const putDataInFields = (element, elementValue) => {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-
+// Set Form fields in Local Storage
   addDataToBrowser(username, 'usernameValue');
   addDataToBrowser(email, 'emailValue');
   addDataToBrowser(message, 'messageValue');
-
+// Load form from previous data
   const data = JSON.parse(localStorage.getItem('form-data'));
   putDataInFields(username, data.usernameValue);
   putDataInFields(email, data.emailValue);
