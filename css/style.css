@@ -73,7 +73,7 @@ li {
   transform: translateY(-8px) rotate(-45deg);
   background-color: #979493;
 }
-
+/*
 .modal-cta {
   background-color: #ff6b00;
   color: white;
@@ -81,11 +81,7 @@ li {
   padding: 10px;
   cursor: pointer;
 }
-
-.modal-cta img * {
-  size: 1px 1px;
-}
-
+*/
 .model-langs {
   margin-left: 0;
 }
