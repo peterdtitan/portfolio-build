@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modalContent = `
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h2>${project.title}</h2>
+                      <h1>${project.title}</h1>
                       <button class="modal-close-btn ${project.privateClasses.modalCloseBtn}">&times;</button>
                     </div>
                     <ul class="modal-langs">
@@ -185,8 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
                           <div class="modal-description">
                             <div>${project.details}</div>
                             <div class="modal-buttons">
-                              <button class="modal-cta" type="button">See Live <img src='./assets/seelive.png'/></button>
-                              <button class="modal-cta" type="button">See Source <img src='./assets/seesource.png'/></button>
+                              <button class="modal-cta" type="button"><img id="seelive" src='./assets/seelive.png'/></button>
+                              <button class="modal-cta" type="button"><img id="seesource" src='./assets/seesource.png'/></button>
                             </div>
                           </div>
                       </div>
