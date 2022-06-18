@@ -257,6 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
   addDataToBrowser(username, 'usernameValue');
   addDataToBrowser(email, 'emailValue');
   addDataToBrowser(message, 'messageValue');
+  
 // Load form from previous data
   const data = JSON.parse(localStorage.getItem('form-data'));
   putDataInFields(username, data.usernameValue);
