@@ -508,7 +508,6 @@ footer {
 .modal-buttons {
   cursor: pointer;
   display: flex;
-  gap: 30px;
 }
 
 .modal-description {
@@ -800,5 +799,9 @@ footer {
 
   .modal-cta {
     gap: 10px;
+  }
+
+  .modal-buttons {
+    gap: 30px;
   }
 }
