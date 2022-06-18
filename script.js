@@ -185,8 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
                           <div class="modal-description">
                             <div>${project.details}</div>
                             <div class="modal-buttons">
-                              <button class="modal-cta" type="button">See Live</button>
-                              <button class="modal-cta" type="button">See Source</button>
+                              <button class="modal-cta" type="button">See Live <img src='./assets/seelive.png'/></button>
+                              <button class="modal-cta" type="button">See Source <img src='./assets/seesource.png'/></button>
                             </div>
                           </div>
                       </div>

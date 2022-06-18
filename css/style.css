@@ -455,7 +455,9 @@ footer {
   margin-right: auto;
   margin-top: 100px;
   padding: 20px;
-  width: 80%;
+  font-size: 16px;
+  line-height: 30px;
+  max-width: 80%;
 }
 
 .modal-close-btn {
@@ -503,6 +505,14 @@ footer {
 .modal-buttons {
   cursor: pointer;
 }
+
+.modal-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
 
 @media (min-width: 768px) {
   body * {
@@ -786,5 +796,14 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #344563
+  }
+
+  .modal-image {
+    
+  }
+
+  .modal-cta {
+    gap:10px;
   }
 }
